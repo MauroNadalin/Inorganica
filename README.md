@@ -172,6 +172,6 @@ Com essas ações criamos o ambiente para desenvolver os códigos a fim de atend
 ## Contribuições
 
 Para contribuir com o projeto, estamos planejando a criação de caixas para acondicionamento de materiais recicláveis inogânicos, com travas eletromecânicas que irão abrir via bluetooth a partir dos aparelhos celulares dos coletores e provedores. Isto serviria para proteger o trabalho de ambos, evitando o acesso a pessoas não autorizadas, e formando uma rede de ajuda mútua. Informações ou sugestões podem enviar email para: mnadalin@alunos.utfpr.edu.br
-![Logo](https://github.com/MauroNadalin/Inorganica/blob/main/tampinha2.png)
+![Logo2](https://github.com/MauroNadalin/Inorganica/blob/main/tampinha2.png)
 ### OBRIGADO!!
 
