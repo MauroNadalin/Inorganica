@@ -17,7 +17,7 @@ Aqui vai uma breve descrição do seu projeto.
 ## Visão Geral
 
 Este é o repositório do meu projeto. Aqui você encontra uma explicação geral sobre o que o projeto faz e qual a sua finalidade.
-[Abrir Manual em PDF](https://docs.google.com/viewer?url=https://github.com/usuario/nome-do-repositorio/raw/main/manual.pdf)
+[Abrir Manual em PDF](https://docs.google.com/viewer?url=https://github.com/MauroNadalin/Inorganica/raw/main/manual.pdf)
 
 ## Arquivos do Projeto
 
@@ -172,7 +172,6 @@ Com essas ações criamos o ambiente para desenvolver os códigos a fim de atend
 ## Contribuições
 
 Para contribuir com o projeto, estamos planejando a criação de caixas para acondicionamento de materiais recicláveis inogânicos, com travas eletromecânicas que irão abrir via bluetooth a partir dos aparelhos celulares dos coletores e provedores. Isto serviria para proteger o trabalho de ambos, evitando o acesso a pessoas não autorizadas, e formando uma rede de ajuda mútua. Informações ou sugestões podem enviar email para: mnadalin@alunos.utfpr.edu.br
-
-![logo](tampinha2.jpg)
+![Logo](https://github.com/MauroNadalin/Inorganica/blob/main/tampinha2.png)
 ### OBIRGADO!!
 
