@@ -81,9 +81,98 @@ os arquivos .css são os arquivos de estilos utilizados para a definição de fo
 Na pasta global estão colocados arquivos de configuração do servidor web, e do sql, para consultar quando migrar de um servidor de testes para o servidor de produção. O arquivo 50-server.conf definimos a propriedade bind-adress para 0.0.0.0 para permitir conexão remota(para acessar via app) e o arquivo apache2 contém as configurações do servidor web para este projeto específico. O arquivo confs.notes é onde anotamos as informações acerca desses dois arquivos.
 ## Como Executar o Projeto
 
-Instruções sobre como rodar o seu projeto localmente, com comandos como `npm install`, `composer install`, ou qualquer outro que seja relevante para o seu projeto.
+O projeto exige a instalação e configuração de vários itens, os quais vamos descrever resumidamente nesta seção, partindo um servidor com sistema operacional Linux Debian12 operacional.
+Basicamente, os tipos de serviços que necessitamos são: Servidor WEB, PHP, Servidor de Banco de Dados(Mysql ou MariaDB). 
+
+Para disponibilizar estes serviços, seguimos os seguintes procedimentos:
+
+### Passo 1: Atualizar o Sistema
+
+sudo apt update
+sudo apt upgrade -y
+
+
+### Passo 2: Instalar Apache2
+Instale o servidor web Apache2:
+
+sudo apt install apache2 -y
+
+Habilite os módulos necessários:
+
+sudo a2enmod rewrite
+sudo a2enmod headers
+
+Reinicie o Apache para aplicar as mudanças:
+
+sudo systemctl restart apache2
+
+
+### Passo 3: Instalar PHP
+Instale o PHP e os módulos necessários:
+
+sudo apt install php libapache2-mod-php php-mysql php-cli php-pear php-gmp php-gd php-bcmath php-mbstring php-curl php-xml php-zip -y
+
+Reinicie o Apache novamente:
+
+sudo systemctl restart apache2
+
+### Passo 4: Instalar MariaDB
+
+Instale o servidor e cliente MariaDB:
+
+sudo apt install mariadb-server mariadb-client -y
+
+Proteja a instalação do MariaDB:
+
+sudo mysql_secure_installation
+
+Siga as instruções para definir a senha root e configurar a segurança.
+
+### Passo 5: Testar a Instalação
+Crie um arquivo PHP de teste:
+
+sudo nano /var/www/html/info.php
+
+Adicione o seguinte conteúdo:
+
+<?php
+phpinfo();
+?>
+
+Acesse `http://seu_ip_servidor/info.php` no navegador para verificar se o PHP está funcionando corretamente.
+
+### Passo 6: Configurar o MariaDB
+Acesse o MariaDB:
+
+sudo mysql -u root -p
+
+Crie um banco de dados e um usuário:
+sql
+CREATE DATABASE meu_banco;
+CREATE USER 'meu_usuario'@'localhost' IDENTIFIED BY 'minha_senha';
+GRANT ALL PRIVILEGES ON meu_banco.* TO 'meu_usuario'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+
+### Passo 7: Instalar phpMyAdmin (Opcional)
+Instale o phpMyAdmin para gerenciar o MariaDB via interface web:
+
+sudo apt install phpmyadmin -y
+
+Selecione Apache2 durante a instalação e configure o phpMyAdmin conforme necessário.
+
+### Passo 8: Reiniciar Todos os Serviços
+Reinicie o Apache e o MariaDB para garantir que todas as mudanças sejam aplicadas:
+
+sudo systemctl restart apache2
+sudo systemctl restart mariadb
+
+Com essas ações criamos o ambiente para desenvolver os códigos a fim de atender as necessidades de fluxo e processamento necessárias ao projeto.
 
 ## Contribuições
 
-Informações sobre como contribuir para o projeto.
+Para contribuir com o projeto, estamos planejando a criação de caixas para acondicionamento de materiais recicláveis inogânicos, com travas eletromecânicas que irão abrir via bluetooth a partir dos aparelhos celulares dos coletores e provedores. Isto serviria para proteger o trabalho de ambos, evitando o acesso a pessoas não autorizadas, e formando uma rede de ajuda mútua. Informações ou sugestões podem enviar email para: mnadalin@alunos.utfpr.edu.br
+
+![logo](tampinha.jpg)
+### OBIRGADO!!
 
