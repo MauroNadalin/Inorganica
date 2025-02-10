@@ -1,0 +1,57 @@
+<?php
+// Conectar ao banco de dados
+$host = 'localhost';
+$dbname = 'inodb';
+$username = 'root';
+$password = 'mAu52gro$$0';
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erro de conexão: " . $e->getMessage());
+}
+
+exportarCSV('coletas','coletas.csv');
+// Função para exportar os dados para CSV
+function exportarCSV($tabela, $arquivo) {
+    global $pdo;
+
+    // Consultar os dados da tabela
+    $sql = "SELECT * FROM $tabela";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+
+    // Definir cabeçalhos para download
+    header('Content-Type: text/csv');
+    header("Content-Disposition: attachment; filename=$arquivo");
+
+    // Abrir o arquivo PHP para saída
+    $output = fopen('php://output', 'w');
+
+    // Adicionar os nomes das colunas no arquivo CSV
+    $colunas = array_keys($stmt->fetch(PDO::FETCH_ASSOC)); // Pega os nomes das colunas
+    fputcsv($output, $colunas); // Escreve as colunas no CSV
+
+    // Adicionar os dados das tabelas no CSV
+    $stmt->execute(); // Reexecuta a consulta para obter todos os dados
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        fputcsv($output, $row); // Escreve as linhas de dados no CSV
+    }
+
+    // Fechar o arquivo após a exportação
+    fclose($output);
+    exit();
+}
+
+// Verificar se a tabela foi passada na URL
+if (isset($_GET['tabela'])) {
+    $tabela = $_GET['tabela'];
+    if ($tabela == 'coletas') {
+        exportarCSV('coletas', 'coletas.csv');
+    } elseif ($tabela == 'users') {
+        exportarCSV('users', 'users.csv');
+    }
+}
+?>
+

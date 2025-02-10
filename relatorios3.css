@@ -1,0 +1,218 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+/* Estilos gerais */
+body {
+    background-image: url('bgpagina.jpg');
+    background-size: cover; /* A imagem cobrirá toda a tela */
+    background-position: center; /* A imagem será centralizada */
+    background-attachment: fixed; /* A imagem ficará fixa ao rolar a página */
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:  10;
+
+}
+
+#cabi img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#cabt h1 {
+    font-size: 2rem;
+    color: #f4f4f4;
+}
+
+#cabt h4 {
+    text-align: right;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(38, 70, 83, 0.75);
+   /* background-color: #264653;*/
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-bottom: 320px;
+}
+
+.filtro {
+    margin: 200px 0px 5px 0px;
+    /*position: static;*/
+    background-color: #264653;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+.filtro label {
+    min-width: 100px; /* Define a largura mínima do label */
+    display: inline-block; /* Garante que o label ocupe um bloco, permitindo definir a largura */
+    text-align: right; /* Alinha o texto à direita, se necessário */
+    margin-bottom: 5px;
+}
+
+.filtro h2 { margin-bottom: 10px;}
+.filtro input {
+    min-width: 300px; /* Define a largura mínima do label */
+    display: inline-block; /* Garante que o label ocupe um bloco, permitindo definir a largura */
+    text-align: right; /* Alinha o texto à direita, se necessário */
+    margin-bottom: 5px;
+}
+
+.filtro submit {
+    min-width: 400px; /* Define a largura mínima do label */
+    display: inline-block; /* Garante que o label ocupe um bloco, permitindo definir a largura */
+    text-align: right; /* Alinha o texto à direita, se necessário */
+    margin-bottom: 5px;
+}
+
+/*.filtro select{
+    min-width: 300px;
+    display: inline-block; 
+    text-align: right; 
+    margin-bottom: 5px;
+}*/
+
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Tabela de Coletas */
+table {
+    width: 100%;
+    margin-top: 8px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background-color: #264653;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #e0f7fa;
+}
+
+table td {
+    font-size: 1rem;
+}
+
+/* Formulário de Ação */
+form {
+    margin: 20px 0px 5px 0px;
+    width: 100%;
+}
+
+form select {
+    padding: 0px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #264653;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 400px; /* Define a largura mínima do label */
+    display: inline-block; /* Garante que o label ocupe um bloco, permitindo definir a largura */
+    text-align: right; /* Alinha o texto à direita, se necessário */
+    margin-bottom: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2a9d8f;
+}
+
+/* Estilos do Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 60%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.modal-error {
+    background-color: #f44336;
+    color: white;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width: 776px) {
+  h1 {
+    font-size: 0.1rem; /* Reduz o tamanho da fonte */
+  }

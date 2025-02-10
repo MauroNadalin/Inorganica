@@ -1,0 +1,4 @@
+arquivo conf do mysql - alterar bind-addres para 0.0.0.0 para permitir manutenção remota
+por padrão vem 127.0.0.1 (localhost)
+
+/etc/mysql/mariadb.conf.d/50-server.cnf 50-server.conf
