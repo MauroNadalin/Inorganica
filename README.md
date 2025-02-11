@@ -59,7 +59,7 @@ Arquivo manipula conexão com banco de dados, apresenta formulario e lista de co
 
 Manipula conexão com banco de dados e apreenta formulario de coletas em tratamento envolvidas com o provedor logado. É mostrado apenas para usuários com perfil "provedor". É onde o provedor faz o cadastramento de uma coleta, para iniciar o processo de tratativa.
 
-##`conexao.php - config.php`
+##`conexao.php-config.php`
 
 Define as propriedades de conexão com o banco de dados, e as variáveis de objetos PDO para execução de consultas utilzando 'statments', para evitar ataques a banco de dados atacados por "SQL Injection"
 
