@@ -25,17 +25,6 @@ Aqui vai uma breve descrição do seu projeto.
   - [arquivos .css](#arquivos .css)
   - [Pasta global](#Pasta global)
 
-
-
-
-
-
-
-
-
-  - [arquivo2.ext](#arquivo2ext)
-  - [arquivo3.ext](#arquivo3ext)
-
 ## Visão Geral
 
 Este é o repositório do meu projeto. Aqui você encontra uma explicação geral sobre o que o projeto faz e qual a sua finalidade.
@@ -57,7 +46,7 @@ Este arquivo é usado para controlar e garantir que os dados de sessão sejam ap
 
 Usado para imagem de fundo das telas.
 
-###`cadusu.php`
+##`cadusu.php`
 
 Arquivo manipula conexão com banco de dados, apresenta formulario para preencher dados e faze consulta "INSERT" via método POST para 
 salvar os dados cadastrais de novo usuário.
