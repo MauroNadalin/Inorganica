@@ -19,10 +19,10 @@ Aqui vai uma breve descrição do seu projeto.
   - [conexao.php-config.php](#conexao.php-config.php)
   - [exportar.php](#exportar.php)
   - [favicon.ico](#favicon.ico)
-  - [login.php - logout.php](#login.php - logout.php)
+  - [login.php-logout.php](#login.php-logout.php)
   - [processar_nota.php](#processar_nota.php)
-  - [relatorios.php - rel.php](#relatorios.php - rel.php)
-  - [arquivos .css](#arquivos .css)
+  - [relatorios.php-rel.php](#relatorios.php-rel.php)
+  - [arquivos.css](#arquivos .css)
   - [Pasta global](#Pasta global)
 
 ## Visão Geral
