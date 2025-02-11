@@ -22,8 +22,8 @@ Aqui vai uma breve descrição do seu projeto.
   - [login.php-logout.php](#login.php-logout.php)
   - [processar_nota.php](#processar_nota.php)
   - [relatorios.php-rel.php](#relatorios.php-rel.php)
-  - [arquivos.css](#arquivos .css)
-  - [Pasta global](#Pasta global)
+  - [arquivos.css](#arquivos.css)
+  - [Pasta_global](#Pasta_global)
 
 ## Visão Geral
 
@@ -83,11 +83,11 @@ Faz o tratamento da nota atribuída ao provedor, pelo coletor, no momento da aç
 
 São os arquivos utilizados para gerar as consultas e apresentar os resultados na tela, ou fornecer também a função de exportação atraves de um botão de ação. Os relatórios são apresentados na tela em forma de tabela, e possuem filtros de status, data inicio e fim, nome, etc..
 
-##`arquivos .css`
+##`arquivos.css`
 
 os arquivos .css são os arquivos de estilos utilizados para a definição de formatos, cores, tamanhos e formas, a fim de proporcionar uma estética atraente e original para as páginas. Também nas folhas de estilo definimos containers do tipo "flex" que permitem melhor apresentação tanto para PC, como para notebooks, tablets e aparelhos móveis.
 
-##`Pasta global`
+##`Pasta_global`
 
 Na pasta global estão colocados arquivos de configuração do servidor web, e do sql, para consultar quando migrar de um servidor de testes para o servidor de produção. O arquivo 50-server.conf definimos a propriedade bind-adress para 0.0.0.0 para permitir conexão remota(para acessar via app) e o arquivo apache2 contém as configurações do servidor web para este projeto específico. O arquivo confs.notes é onde anotamos as informações acerca desses dois arquivos.
 
