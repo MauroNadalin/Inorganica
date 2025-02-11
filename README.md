@@ -34,7 +34,7 @@ Este é o repositório do meu projeto. Aqui você encontra uma explicação gera
 
 Abaixo, estão os arquivos presentes no repositório e suas respectivas funções.
 
-### 'abre_ou_redireciona.php`
+### `abre_ou_redireciona.php`
 
 Utilizado para controle de acesso da página de cadastro de usuários. Uma vez que para se cadastrar como novo usuário obviamente este novo usuário ainda não tem login, então ele precisa ter acesso a essa página, mas passando primeiro pela pagina inicial, onde existe o redirecionamento via menu.
 
