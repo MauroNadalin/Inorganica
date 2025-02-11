@@ -71,7 +71,7 @@ Gera um arquivo tipo "txt" e disponibiliza para download. A função é exportar
 
 Arquivo que é buscado pelo browser, por padrão, para ser mostrado na aba da janela do navegador. Neste caso colocamos a figura de nosso mascote e renomeamos para favicon.ico, assim ele aparece na aba dos navegadores.
 
-##`login.php - logout.php`
+##`login.php-logout.php`
 
 O arquivo login.php é usado para validar o login e senha via consulta ao banco de dados, comparando login e senha digitados no formulario com aquele presente no registro do usuário. Uma vez validada, são definidas as variáveis de sessão, utilizadas para restringir, permitir ou redirecionar o fluxo de apresentações de telas. O arquivo de logout serve para limpar as variáveis de sessão e garantir a parada de qualquer outro processamento (comando exit()),e redireciona para a página "atebreve";
 
