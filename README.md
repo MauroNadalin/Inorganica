@@ -16,7 +16,7 @@ Aqui vai uma breve descrição do seu projeto.
   - [cadusu.php](#cadusu.php)
   - [coletacoletor.php](#coletacoletor.php)
   - [coletaprov.php](#coletaprov.php)
-  - [conexao.php-config.php](#conexao.php - config.php)
+  - [conexao.php-config.php](#conexao.php-config.php)
   - [exportar.php](#exportar.php)
   - [favicon.ico](#favicon.ico)
   - [login.php - logout.php](#login.php - logout.php)
