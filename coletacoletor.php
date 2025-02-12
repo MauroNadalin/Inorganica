@@ -40,7 +40,7 @@ $user_perfil= $_SESSION['user_perfil']; // O perfil do usuário logado: provedor
 // Conexão com o banco de dados
 $dsn = 'mysql:host=localhost;dbname=inodb';
 $username = 'root';
-$password = 'mAu52gro$$0';
+$password = 'xxxxxxxx';
 
 try {
     $pdo = new PDO($dsn, $username, $password);
