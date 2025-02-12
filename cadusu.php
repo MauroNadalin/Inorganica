@@ -13,7 +13,7 @@ error_reporting(E_ALL);
 // Configuração do banco de dados
 $servername = "localhost";
 $username = "root";
-$password = "mAu52gro$$0";
+$password = "xxxxxxx";
 $dbname = "inodb";
 
 // Conexão com o banco de dados
