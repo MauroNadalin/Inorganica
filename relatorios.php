@@ -49,7 +49,7 @@ $fim_filter = isset($_GET['fim']) ? $_GET['fim'] : '';
 // Conexão com o banco de dados
 $dsn = 'mysql:host=localhost;dbname=inodb';
 $username = 'root';
-$password = 'mAu52gro$$0';
+$password = 'xxxxxxxxxxx';
 
 try {
     $pdo = new PDO($dsn, $username, $password);
