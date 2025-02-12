@@ -10,7 +10,7 @@ Aqui vai uma breve descrição do seu projeto.
 
 - [Visão Geral](#visao-geral)
 - [Arquivos do Projeto](#arquivos-do-projeto)
-  - [abre_ou_redireciona.php](#abre_ou_redireciona.php)
+  - [abre_ou_redireciona.php](https://github.com/MauroNadalin/Inorganica/blob/main/README.md)
   - [atebreve.php](#atebreve.php)
   - [bgpagina.jpg](#bgpagina.jpg)
   - [cadusu.php](#cadusu.php)
