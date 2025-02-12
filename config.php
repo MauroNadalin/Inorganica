@@ -4,7 +4,7 @@ session_start(); // Inicia a sessão para verificar se o usuário está logado
 // Configuração do banco de dados
 $servername = "localhost";
 $username = "root";
-$password = "mAu52gro$$0";
+$password = "xxxxxxxxxxx";
 $dbname = "inodb";
 
 // Conexão com o banco de dados
