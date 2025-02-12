@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'inodb';
 $username = 'root';
-$password = 'mAu52gro$$0';
+$password = 'xxxxxxxxxxx';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
