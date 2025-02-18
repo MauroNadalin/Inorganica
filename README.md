@@ -8,7 +8,7 @@ Projeto para melhoria de comportamento humano em reciclagem baseado em recompens
 
 # Licença
 
-<a href="https://mit-license.org/">
+<a href="https://mit-license.org/"´target="_blank">
 <img src="https://raw.githubusercontent.com/remy/mit-license/refs/heads/master/favicon.ico" alt="MIT License" width="20" height="20">
 MIT License
 </a>
