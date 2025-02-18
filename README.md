@@ -5,6 +5,8 @@ Projeto para melhoria de comportamento humano em reciclagem baseado em recompens
 # Reciclagem Inorgânica
 
 # Licença
+<img src="[URL_DA_IMAGEM](https://raw.githubusercontent.com/remy/mit-license/refs/heads/master/favicon.ico)" alt="Licença MIT" width="300" height="200">
+
 ![Logo](https://raw.githubusercontent.com/remy/mit-license/refs/heads/master/favicon.ico)
 [MIT License](https://mit-license.org/)
 
