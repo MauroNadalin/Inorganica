@@ -1,7 +1,7 @@
 # Inorganica
 Projeto para melhoria de comportamento humano em reciclagem baseado em recompensa.
 ![Logo](https://github.com/MauroNadalin/Inorganica/blob/main/img/tampinhalogo.png)
--![Logo] (https://raw.githubusercontent.com/remy/mit-license/refs/heads/master/favicon.ico)[MIT License](https://mit-license.org/)
+![Logo] (https://raw.githubusercontent.com/remy/mit-license/refs/heads/master/favicon.ico)[MIT License](https://mit-license.org/)
 
 # Reciclagem Inorgânica
 
