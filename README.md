@@ -13,6 +13,7 @@ Projeto para melhoria de comportamento humano em reciclagem baseado em recompens
 MIT License
 </a>
 
+!MIT License MIT License
 
 ###
 
